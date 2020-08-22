@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Bon-Jay's CRUD App</title>  
+</head>
+<body>
+  
+  <h1>Personal To-Do List</h1>
+  <br>
+  <form id="newUser_form">
+    <label for="newUser">Username: </label>
+    <input type="text" placeholder="Enter your username: " id="newUser" name="newUser" required>
+    <label for="newPassword">Password: </label>
+    <input type="password" placeholder="Enter your password: " id="newPassword" name="newPassword" required>
+    <button type="submit">Create Account</button>
+  </form>
+  <br>
+  <form id="existingUser_form">
+    <label for="oldUser">Username: </label>
+    <input type="text" placeholder="Enter your username: " id="oldUser" name="oldUser" required>
+
+    <label for="oldPassword">Password: </label>
+    <input type="password" placeholder="Enter your password: " id="oldPassword" name="oldPassword" required>
+  <button type="submit">Login</button>
+  </form>
+
+  <button id="logout_btn">Logout</button>
+
+  <br>
+  <div class="todo_container">
+    
+    <form id="new_message_form">
+      <input type="text" placeholder="Enter your new task: " id="createTask" name="createTask" required>
+    <button type="submit">New task</button>
+    </form>
+    <br>
+    <h4><span id='currentUser'>A</span>'s To-Do List</h4>
+    <br>
+    <div class="todo_list"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

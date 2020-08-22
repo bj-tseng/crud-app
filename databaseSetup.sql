@@ -1,0 +1,21 @@
+-- SETTING UP EVERTHING
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  username VARCHAR (255) NOT NULL,
+  password VARCHAR (255) NOT NULL,
+  UNIQUE(username)
+);
+
+CREATE TABLE actions (
+  id SERIAL PRIMARY KEY,
+  commentary VARCHAR (255) NOT NULL,
+  user_id INT,
+  CONSTRAINT fk_user
+  FOREIGN KEY(user_id) 
+  REFERENCES users(id)
+  ON DELETE CASCADE
+);
+
+-- DROPPING DATABASES
+DROP TABLE users;
+DROP TABLE actions;

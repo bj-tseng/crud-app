@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: blue;
+}
+
+.todo_container {
+  border: 1px solid green;
+  padding: 10px 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+label,
+input,
+button {
+  margin: 2px;
+}
+
+input {
+  width: 200px;
+}
+
+#logout_btn {
+  margin: 5px;
+}
